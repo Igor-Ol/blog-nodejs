@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
+    <%- include('./parciais/head.ejs') %>
+
 <body>
-    <nav>
-        <div class="titulo-site">
-            <a href="/"><h1>Blog</h1></a>
-            <p>Site</p>
-        </div>
-        <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/blog/criar">Novo Blog</a></li>
-        </ul>
-    </nav>
+        <%- include('./parciais/nav.ejs') %>
+
 
     <div class="criar-conteudo-blog">
         <form action="">
@@ -29,6 +17,7 @@
             <button>Enviar</button>
         </form>
     </div>
+            <%- include('./parciais/footer.ejs') %>
 
 </body>
 </html>
