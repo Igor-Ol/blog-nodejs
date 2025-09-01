@@ -1,0 +1,8 @@
+CREATE DATABASE blog;
+USE blog;
+CREATE TABLE blog(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(60),
+  textocurto VARCHAR(70),
+  conteudo VARCHAR(300)
+);

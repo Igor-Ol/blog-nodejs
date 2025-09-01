@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include('./parciais/head.ejs') %>
+
+<body>
+    <!--Inclusão de parcial NAV-->
+    <%- include('./parciais/nav.ejs') %>
+    <div class="conteudo-blog">
+        <h2>Todo Blog</h2>
+        <% if (blogs.length > 0){ %>
+        <% blogs.forEach(blog => { %>
+           
+            <h3 class="titulo"><%= blog.titulo %></h3>
+            <p class="conteudo"><%= blog.conteudo %></p>
+
+        <% }) %>
+        <% } else { %>
+            <p>A lista do Blog está vazia</p>
+        <% } %>
+    </div>
+        <%- include('./parciais/footer.ejs') %>
+
+</body>
+</html>
